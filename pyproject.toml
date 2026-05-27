@@ -19,7 +19,8 @@ build-backend = "poetry.core.masonry.api"
 lint = [
     "flake8 (>=7.3.0,<8.0.0)",
     "black (>=26.5.1,<27.0.0)",
-    "isort (>=8.0.1,<9.0.0)"
+    "isort (>=8.0.1,<9.0.0)",
+    "pre-commit (>=4.6.0,<5.0.0)"
 ]
 
 [tool.black]
