@@ -1,0 +1,34 @@
+# Виртуальное окружение (то самое, что мы настроили на Шаге 3)
+.venv/
+venv/
+ENV/
+
+# Кэш Python и байт-код
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Кэш инструментов линтинга и форматирования (Black, Ruff, etc)
+.black
+.ruff_cache/
+
+# Специфичные файлы систем сборки
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Файлы настроек вашей среды разработки (IDE)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Логи и операционная система
+*.log
+.DS_Store
+Thumbs.db

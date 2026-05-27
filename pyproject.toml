@@ -1,0 +1,45 @@
+[project]
+name = "skypro-coursework-one"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "aeyy", email = "davimraba2020@gmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+lint = [
+    "flake8 (>=7.3.0,<8.0.0)",
+    "black (>=26.5.1,<27.0.0)",
+    "isort (>=8.0.1,<9.0.0)"
+]
+
+[tool.black]
+line-length = 119
+target-version = ['py312']
+exclude = '''
+/(
+    \.git
+
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 119
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
